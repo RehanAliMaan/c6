@@ -1,0 +1,623 @@
+#include <iostream>
+using namespace std;
+
+int main(){
+	
+	char ch;
+	cout << "Please enter a character: ";
+	cin>>ch;
+	if (ch>= 'a' && ch<='z'){
+		cout << "Entered character is lowercase letter";
+}
+	else {
+		cout << "Entered character is not lowercase letter";
+	}
+		
+	
+	
+	
+	return 0;
+}
+
+
+#include <iostream>
+using namespace std;
+
+int main(){
+
+ int a=400,b=275;
+ char status;
+ cout << "Please enter your status: ";
+ cin>> status;
+ 
+ if (status=='s' || status=='S'){
+ 	
+ 	cout << "Senior salesperson salary is: "<<a<<endl;
+ }
+else if(status=='j' || status== 'J'){
+	
+	cout << "Junior salesperson salary is: "<<b<<endl;
+}
+else {
+	
+	cout << "Error Message"<<endl;
+	cout << "Please enter valid status";
+}
+
+return 0;
+
+
+
+}
+
+#include <iostream>
+using namespace std;
+
+int main(){
+ 
+int a,b,c;
+
+cout << "Enter your integer: ";
+cin >>a;
+cout << "Enter your integer: ";
+cin >>b;
+cout << "Enter your integer: ";
+cin >>c;
+cout <<endl;
+
+if (a!=0){
+	
+	if (b%a==0){
+		cout<<b<< " is a common divisor of "<<a<<endl<<endl;
+	}
+	else {
+		cout <<b<< " is not a common divisor of "<<a<<endl<<endl;
+	}
+	if (c%a==0){
+		cout<<c<< " is a common divisor of "<<a<<endl<<endl;
+	}
+	else {
+		cout <<c<< " is not a common divisor of "<<a<<endl<<endl;
+	}
+}
+else{
+	cout<< "a is zero"<<endl;
+}
+
+return 0;
+}
+
+
+#include <iostream>
+using namespace std;
+
+int main(){
+
+char ch;
+float area, side,base,height;
+cout << "Enter S for Sqaure area"<<endl;
+cout << "Enter T for Triangle area"<<endl<<endl;
+cout << "Please enter your required area: ";
+cin>>ch;
+
+if (ch=='S'){
+	cout<< "Enter the length of side: ";
+	cin >> side;
+	area = side *side;
+	cout<< "Your Area of Square is: "<<area;
+}
+else if (ch=='T'){
+	cout<< "Enter the base: ";
+	cin >> base;
+	cout<< "Enter the height : ";
+	cin >> height;
+	area = (base * height)* 1/2;
+	cout<< "Your Area of Square is: "<<area;
+}
+
+return 0;
+}
+
+#include <iostream>
+using namespace std;
+
+int main(){
+
+char ch;
+float temp,fah,cel;
+cout << "Enter f for Fahrenheit to Celcius"<<endl;
+cout << "Enter c for Celcius to Fahrenheit"<<endl<<endl;
+cout << "Please enter your Temperature: ";
+cin >> temp;
+cout << "Please enter a letter: ";
+cin >>ch;
+cout <<endl;
+switch (ch)
+case 'f':{
+	
+	fah =(temp - 32) * 5/9;
+	cout << "Your Tempereture in Fahrenhiet is: "<<fah;
+	
+	break;
+ 
+case 'c':
+	
+	cel =(temp * 9/5) + 32;
+	cout << "Your Tempereture in Fahrenhiet is: "<<cel;
+	
+	break;
+
+default: 
+       cout << "Error Message"<<endl;
+}
+
+return 0;
+}
+
+
+
+#include <iostream>
+using namespace std;
+
+int main(){
+
+char ch;
+
+cout << "A for Adventure Movies"<<endl;
+cout << "C for Comedy Movies"<<endl;
+cout << "F for Famliy Movies"<<endl;
+cout << "H for Horror Movies"<<endl;
+cout << "S for Science Fiction Movies"<<endl<<endl;
+
+cout << "Please enter your Choice: ";
+cin >> ch;
+cout <<endl;
+switch (ch)
+ case 'A':{
+
+	cout << "Adventure Movies:"<<endl;
+	cout << "   1.Assassin's Creed"<<endl;
+	cout << "   2.Love and Monsters"<<endl;
+	cout << "   3.Thugs of Hindostan"<<endl;
+	cout << "   4.Triple Frontier"<<endl;
+    break;
+case 'C':
+	cout << "Comedy Movies:"<<endl;
+	cout << "   1.No Hard Feelings"<<endl;
+	cout << "   2.The Wonderful Story of Henry Sugar"<<endl;
+	cout << "   3.Hidden Strike"<<endl;
+	cout << "   4.The Lost City"<<endl;
+	break;
+case 'F':
+	cout << "Family Movies:"<<endl;
+	cout << "   1.Dhanak"<<endl;
+	cout << "   2.Dora and the Lost City of Gold"<<endl;
+	cout << "   3.We Can Be Heroes"<<endl;
+	cout << "   4.Chillar Party"<<endl;
+	break;
+case 'H':
+	cout << "Horror Movies:"<<endl;
+	cout << "   1.Viking Wolf"<<endl;
+	cout << "   2.The Invitation"<<endl;
+	cout << "   3.Oxygen"<<endl;
+	cout << "   4.Blood Red Sky"<<endl;
+	break;
+case 'S':
+	cout << "Science Fiction Movies:"<<endl;
+	cout << "   1.Lucy"<<endl;
+	cout << "   2.Spectral"<<endl;
+	cout << "   3.Project Power"<<endl;
+	cout << "   4.Rim of the World"<<endl;
+	break;
+default:
+    break;
+} 
+
+return 0;
+}
+
+
+#include <iostream>
+using namespace std;
+
+int main(){
+
+float i,g,m,p,d;
+char ch;
+
+cout << "Enter i or I for coversion type inches to centimeters"<<endl;
+cout << "Enter g or G for coversion type gallons to liters"<<endl;
+cout << "Enter m or M for coversion type miles to kilometers"<<endl;
+cout << "Enter p or P for coversion type pounds to kilograms"<<endl<<endl;
+
+cout << "Enter your letter of required conversion: ";
+cin >> ch;
+cout<< endl;
+
+switch (ch)
+
+case 'i':
+case 'I':{
+   cout << "Please enter data in inches: ";
+   cin >> d;
+   i = d * 2.54;
+   cout << "Your conversion in centimeters is: "<<i<<" centimeters"; 
+
+break;
+
+case 'g':
+case 'G':
+   cout << "Please enter data in gallons: ";
+   cin >> d;
+   g = d * 3.785;
+   cout << "Your conversion in liters is: "<<g<<" liters"; 
+
+break;
+
+case 'm':
+case 'M':
+   cout << "Please enter data in miles: ";
+   cin >> d;
+   m = d * 1.609;
+   cout << "Your conversion in kilometers is: "<<m<<" kilometers"; 
+
+break;
+
+case 'p':
+case 'P':
+   cout << "Please enter data in pounds: ";
+   cin >> d;
+   p = d * 0.4536;
+   cout << "Your conversion in kilograms is: "<<p<<" kilograms"; 
+
+break;
+
+default:
+	cout << "Please enter valid conversion"<<endl;
+}
+
+return 0;
+}
+
+
+
+#include <iostream>
+using namespace std;
+
+int main (){
+	
+	int year;
+	
+	cout<< "Enter the year: ";
+	cin >> year;
+	cout << endl;
+	if (year%4==0){
+		
+		cout << "The year "<<year<<" is a leap year"<<endl;	 
+	} 
+	else if (year%100==0 && year%400==0){
+		
+		cout << "The year "<<year<<" is a leap year"<<endl;
+	}
+	else {
+		
+		cout << "The year "<<year<<" is not a leap year"<<endl;
+	}
+	return 0;
+}
+
+#include <iostream>
+using namespace std;
+
+int main(){
+	
+	float temp;
+	
+	cout<< "Please enter your Temperature: ";
+	cin >> temp;
+	cout << endl;
+	if (temp>35){
+		
+		cout << "Your day is Hot"<<endl;
+	}
+	else if (temp>=25 && temp<=35){
+		
+		cout << "Your day is Pleasant"<<endl;
+	}  
+	else{
+		
+		cout << "Your day is Cold"<<endl;
+	} 
+	return 0;
+}
+
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int MT,hours,minutes;
+    cout << "Enter military time: ";
+    cin >> MT;
+
+     if (MT < 0 || MT > 2359) {
+        cout << "Error military time. Please enter a time between 0000 and 2359." << endl;
+       return 0; 
+    }
+     hours = MT / 100;
+     minutes = MT % 100;
+
+    string period = (hours < 12) ? "AM" : "PM";
+    if (hours > 12) {
+        hours = hours - 12;
+    } else if (hours == 0) {
+        hours = 12;
+    }
+    cout << "Standard time: " << hours << ":" << (minutes < 10 ? "0" : "") << minutes << " " << period << endl;
+
+    return 0;
+}
+
+#include <iostream>
+using namespace std;
+
+int main() {
+
+   int ob,p;
+   
+   cout << "Enter the obtained marks of student: ";
+   cin >> ob;
+   
+   cout << endl;
+  if (ob<1100){
+   	 p = (ob*100)/1100 ;
+     cout<< "Your percentage is: "<<p<<endl;
+   	if (p>=80){
+   	   cout << "Your grade is A+"<<endl;
+   	}
+   	else if (p<80 && p>=70){
+   	   cout << "Your grade is A"<<endl;
+   	}
+   	else if (p<70 && p>=60){
+   	   cout << "Your grade is B"<<endl;
+   	}
+   	else if (p<60 && p>=50){
+   	   cout << "Your grade is C"<<endl;
+   	}
+   	else if (p<50 && p>=40){
+   	   cout << "Your grade is D"<<endl;
+   	}
+   	else if (p<40 && p>=33){
+   	   cout << "Your grade is E"<<endl;
+   	}
+     else{
+   	   cout << "Your grade is F"<<endl;
+   	}
+   
+   
+   }
+
+else {
+	
+cout << "PLease enter marks in range from 0 to 1100"<<endl;	
+}   
+   
+return 0;
+}
+
+#include <iostream>
+using namespace std;
+
+int main(){
+	
+	float salary,tax,net;
+	
+	cout << "Enter your salary: ";
+	cin >> salary;
+	cout<< endl;
+	
+	if(salary>30000){
+		
+		tax = salary * 0.20;
+		net = salary - tax;
+		cout << "Your current salary is: "<<salary<<endl;
+		cout << "Your income tax on salary is: 20% "<<endl;
+	    cout << "Your net salary is: "<<net<<endl;
+	}
+	else if (salary>=20000 && salary<=30000){
+		
+		tax = salary * 0.15;
+		net = salary - tax;
+		cout << "Your current salary is: "<<salary<<endl;
+		cout << "Your income tax on salary is: 15% "<<endl;
+	    cout << "Your net salary is: "<<net<<endl;
+	}
+	else {
+		
+		tax = salary * 0.10;
+		net = salary - tax;
+		cout << "Your current salary is: "<<salary<<endl;
+		cout << "Your income tax on salary is: 10% "<<endl;
+	    cout << "Your net salary is: "<<net<<endl;
+	}
+	return 0;
+}
+
+#include <iostream>
+using namespace std;
+
+int main(){
+	
+	int year, month;
+	
+	cout << "Enter your year: ";
+	cin >> year;
+	cout << "Enter your month: ";
+	cin >> month;
+	cout<<endl;
+		
+     switch (month)
+     case 1:{
+     	cout <<"Januray "<<year<<" has 31 days"<<endl;
+		
+		break;
+	 case 2:
+	 if (year%4!=0 || year%400!=0 && year%100== 0){
+     	cout <<"February "<<year<<" has 28 days"<<endl;
+	 }
+		else {
+			cout <<"February "<<year<<" has 29 days"<<endl;
+		}
+	    break;
+	case 3:
+     	cout <<"March "<<year<<" has 31 days"<<endl;
+		break;
+	case 4:
+     	cout <<"April "<<year<<" has 30 days"<<endl;
+		break;
+    case 5:
+     	cout <<"May "<<year<<" has 31 days"<<endl;
+		break;
+    case 6:
+     	cout <<"June "<<year<<" has 30 days"<<endl;
+		break;
+	case 7:
+     	cout <<"July "<<year<<" has 31 days"<<endl;
+		break;
+	case 8:
+     	cout <<"August "<<year<<" has 31 days"<<endl;
+		break;
+	case 9:
+     	cout <<"September "<<year<<" has 30 days"<<endl;
+		break;
+	case 10:
+     	cout <<"October "<<year<<" has 31 days"<<endl;
+		break;
+	case 11:
+     	cout <<"November "<<year<<" has 30 days"<<endl;
+		break;
+	case 12:
+     	cout <<"December "<<year<<" has 31 days"<<endl;
+		break;
+	
+	default:
+		cout<< "invalid month"<<endl;
+	}
+}
+
+
+#include <iostream>
+using namespace std;
+
+int main(){
+	int days,tc;
+	char ch;
+	
+	cout << "M\t = Motorcycle"<<endl;
+	cout << "C\t = Car"<<endl;
+	cout << "B\t = Bus"<<endl;
+	cout <<endl;
+	cout<< "Please enter your vehicle type: ";
+	cin >> ch;
+	
+	switch (ch)
+	case 'M':{
+		cout << "Please enter the number of days: ";
+	    cin >> days;
+	    cout <<endl;
+		tc = days * 10;
+		cout << "Charge per day is Rs.10 "<<endl;
+		cout << "Your total parking charge for motorcycle is: "<<tc<<endl; 
+	
+	 break;
+	 case 'C':
+	    cout << "Please enter the number of days: ";
+	    cin >> days;
+        cout <<endl;
+		tc = days * 20;
+		cout << "Charge per day is Rs.20 "<<endl;
+		cout << "Your total parking charge for car is: "<<tc<<endl; 
+	
+	 break;
+	case 'B':
+		cout << "Please enter the number of days: ";
+	    cin >> days;
+		cout <<endl;
+		tc = days * 30;
+		cout << "Charge per day is Rs.30 "<<endl;
+		cout << "Your total parking charge for bus is: "<<tc<<endl; 
+	
+	 break;
+	
+	default:
+		cout << "Please enter valid letter from menu ";
+
+	}
+	
+return 0;
+}
+
+
+
+#include <iostream>
+using namespace std;
+
+int main(){
+
+float c,l,km,kg,d;
+
+char ch;
+
+cout << "Enter c or C for coversion type centimeters to inches "<<endl;
+cout << "Enter l or L for coversion type liters to gallons "<<endl;
+cout << "Enter k or K for coversion type kilometers to miles "<<endl;
+cout << "Enter g or G for coversion type kilograms to pounds "<<endl<<endl;
+
+cout << "Enter your letter of required conversion: ";
+cin >> ch;
+cout<< endl;
+
+switch (ch)
+
+case 'c':
+case 'C':{
+   cout << "Please enter data in centimeters: ";
+   cin >> d;
+   c = d * 0.394;
+   cout << "Your conversion in inches is: "<<c<<" inches"; 
+
+break;
+
+case 'l':
+case 'L':
+   cout << "Please enter data in liters: ";
+   cin >> d;
+   l = d * 0.264;
+   cout << "Your conversion in gallons is: "<<l<<" gallons"; 
+
+break;
+
+case 'k':
+case 'K':
+   cout << "Please enter data in kilometers: ";
+   cin >> d;
+   km = d * 0.622;
+   cout << "Your conversion in miles is: "<<km<<" miles"; 
+
+break;
+
+case 'g':
+case 'G':
+   cout << "Please enter data in kilograms: ";
+   cin >> d;
+   kg = d * 2.2;
+   cout << "Your conversion in pounds is: "<<kg<<" pounds"; 
+
+break;
+
+default:
+	cout << "Please enter valid conversion"<<endl;
+}
+
+return 0;
+}
